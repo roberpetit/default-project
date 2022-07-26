@@ -1,10 +1,10 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { UntypedFormBuilder, Validators, UntypedFormGroup } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
-import { QrEntity } from '../model/qr-entity.model';
-import { QrService } from '../service/qr.service';
+import { QrEntity } from '../../model/qr-entity.model';
+import { QrService } from '../../service/qr.service';
 import { environment } from 'src/environments/environment';
-import jsPDF from 'jspdf';
+//import jsPDF from 'jspdf';
 
 @Component({
   selector: 'app-show-qr',
@@ -53,6 +53,7 @@ export class ShowQrComponent implements OnInit {
   printQR(event?) {
 
     let DATA = document.getElementById('htmlData');
+    /*
     let doc = new jsPDF("p", "mm", "a4", true);
     doc.html(DATA, {
       callback: (doc) => {
@@ -60,7 +61,7 @@ export class ShowQrComponent implements OnInit {
         doc.save("qr.pdf");
       }
     });
-    /*
+   
     let content = window.document.getElementById("content");
 
     doc.canvas.height = 72 * 11;

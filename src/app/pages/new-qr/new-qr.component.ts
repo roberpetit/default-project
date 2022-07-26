@@ -1,8 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { UntypedFormGroup, UntypedFormBuilder, Validators, ValidatorFn, AbstractControl } from '@angular/forms';
 import { Router } from '@angular/router';
-import { QrEntity } from '../model/qr-entity.model';
-import { QrService } from '../service/qr.service';
+import { QrEntity } from '../../model/qr-entity.model';
+import { QrService } from '../../service/qr.service';
 
 @Component({
   selector: 'app-new-qr',

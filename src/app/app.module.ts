@@ -7,26 +7,24 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { MaterialModule } from './material/material.module';
-import { NewQrComponent } from './new-qr/new-qr.component';
+import { NewQrComponent } from './pages/new-qr/new-qr.component';
 import { QrService } from './service/qr.service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { ComponentModule } from './component/component.module';
 import { CommonModule } from '@angular/common';
-import { GeneratorComponent } from './generator/generator.component';
+import { GeneratorComponent } from './pages/generator/generator.component';
 import { HomeComponent } from './home/home.component';
-import { ShowQrComponent } from './show-qr/show-qr.component';
-import { QrFormComponent } from './qr-form/qr-form.component';
+import { ShowQrComponent } from './pages/show-qr/show-qr.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NewQrComponent,
     GeneratorComponent,
-    HomeComponent,
     ShowQrComponent,
-    QrFormComponent
+    HomeComponent,
   ],
   imports: [
     CommonModule,

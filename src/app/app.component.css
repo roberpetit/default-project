@@ -3,5 +3,9 @@
   }
 
   .main {
-    margin-left: 130px;
+    margin: 20px;
+  }
+
+  .mat-drawer-container {
+    background-image: url('/assets/images/background-funk.png');
   }

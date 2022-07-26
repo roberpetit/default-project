@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
-import { QrEntity } from '../model/qr-entity.model';
+import { QrEntity } from '../../model/qr-entity.model';
 
 @Component({
   selector: 'app-qr-form',

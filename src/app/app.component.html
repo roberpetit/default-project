@@ -18,7 +18,7 @@
 
 
 
-  <div style="height: 80vh;" class="content" role="main">
+  <div style="height: 100%;" class="content" role="main">
     <mat-toolbar color="primary">
       <mat-toolbar-row>
         <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
@@ -36,7 +36,7 @@
       </mat-toolbar-row>
     </mat-toolbar>
     <mat-sidenav-container fxFlexFill >
-      <mat-sidenav #sidenav>
+      <mat-sidenav #sidenav >
         <mat-nav-list>
           <a routerLink="/home" mat-list-item>home</a>
           <a routerLink="/new" mat-list-item>new</a>
@@ -58,3 +58,4 @@
       </mat-sidenav-content>
     </mat-sidenav-container>
   </div>
+  
