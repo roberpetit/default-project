@@ -7,5 +7,8 @@
   }
 
   .mat-drawer-container {
-    background-image: url('/assets/images/background-funk.png');
+  }
+
+  .mat-toolbar.mat-primary {
+    background: #2a5422;
   }
