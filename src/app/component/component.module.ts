@@ -11,6 +11,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { DatepickerComponent } from './datepicker/datepicker.component';
 import { QrFormComponent } from './qr-form/qr-form.component';
 import { FlashyAccordionComponent } from './flashy-accordion/flashy-accordion.component';
+import { CardsComponent } from './cards/cards.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FlashyAccordionComponent } from './flashy-accordion/flashy-accordion.co
     InputSearchComponent,
     DatepickerComponent,
     QrFormComponent,
-    FlashyAccordionComponent
+    FlashyAccordionComponent,
+    CardsComponent
   ],
   exports: [
     TableComponent,
@@ -27,7 +29,8 @@ import { FlashyAccordionComponent } from './flashy-accordion/flashy-accordion.co
     InputSearchComponent,
     DatepickerComponent,
     QrFormComponent,
-    FlashyAccordionComponent
+    FlashyAccordionComponent,
+    CardsComponent
   ],
   imports: [
     MaterialModule,
