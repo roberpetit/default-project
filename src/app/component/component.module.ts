@@ -7,11 +7,13 @@ import { MaterialModule } from 'src/app/material/material.module';
 import { TableComponent } from './table/table.component';
 import { ConfirmationDialogComponent } from './confirmation-dialog/confirmation-dialog.component';
 import { InputSearchComponent } from './input-search/input-search.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DatepickerComponent } from './datepicker/datepicker.component';
 import { QrFormComponent } from './qr-form/qr-form.component';
 import { FlashyAccordionComponent } from './flashy-accordion/flashy-accordion.component';
 import { CardsComponent } from './cards/cards.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { SnackbarComponent } from './snackbar/snackbar.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { CardsComponent } from './cards/cards.component';
     DatepickerComponent,
     QrFormComponent,
     FlashyAccordionComponent,
-    CardsComponent
+    CardsComponent,
+    SnackbarComponent,
   ],
   exports: [
     TableComponent,
@@ -30,11 +33,14 @@ import { CardsComponent } from './cards/cards.component';
     DatepickerComponent,
     QrFormComponent,
     FlashyAccordionComponent,
-    CardsComponent
+    CardsComponent,
+    SnackbarComponent,
   ],
   imports: [
     MaterialModule,
     CommonModule,
+    BrowserModule,
+    FormsModule,
     ReactiveFormsModule,
     TranslateModule.forRoot({
       loader: {

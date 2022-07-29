@@ -1,14 +1,13 @@
-  .menu-spacer {
-    flex: 1 1 auto;
-  }
+.menu-spacer {
+  flex: 1 1 auto;
+}
 
-  .main {
-    margin: 20px;
-  }
+.main {
+  margin: 20px;
+}
 
-  .mat-drawer-container {
-  }
+.mat-drawer-container {}
 
-  .mat-toolbar.mat-primary {
-    background: #2a5422;
-  }
+.mat-toolbar.mat-primary {
+  background: #2a5422;
+}

@@ -34,10 +34,12 @@
           <mat-icon>map</mat-icon>
         </mat-panel-description>
       </mat-expansion-panel-header>
+
+      <app-snackbar [message]="country.value" [action]="'aceptar'" [button]="'Nombre del boton'"></app-snackbar>
   
       <mat-form-field appearance="fill">
         <mat-label>Country</mat-label>
-        <input matInput>
+        <input matInput #country>
       </mat-form-field>
   
       <mat-action-row>

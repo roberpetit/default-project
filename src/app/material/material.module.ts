@@ -20,10 +20,11 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatSortModule } from '@angular/material/sort';
 import { MatTreeModule } from '@angular/material/tree';
-import {MatListModule} from '@angular/material/list';
-import {MatExpansionModule} from '@angular/material/expansion';
+import { MatListModule } from '@angular/material/list';
+import { MatExpansionModule } from '@angular/material/expansion';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 @NgModule({
   declarations: [],
@@ -51,7 +52,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     MatListModule,
     MatExpansionModule,
     FlexLayoutModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatProgressBarModule
   ],
   exports: [
     MatToolbarModule,
@@ -76,7 +78,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     MatListModule,
     MatExpansionModule,
     MatSidenavModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatProgressBarModule
   ]
 })
 export class MaterialModule { }
