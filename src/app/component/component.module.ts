@@ -14,6 +14,10 @@ import { FlashyAccordionComponent } from './flashy-accordion/flashy-accordion.co
 import { CardsComponent } from './cards/cards.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { SnackbarComponent } from './snackbar/snackbar.component';
+import { CarouselModule } from 'primeng/carousel';
+import { ButtonModule } from 'primeng/button';
+import { ToastModule } from 'primeng/toast';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +29,7 @@ import { SnackbarComponent } from './snackbar/snackbar.component';
     FlashyAccordionComponent,
     CardsComponent,
     SnackbarComponent,
+    CarouselComponent,
   ],
   exports: [
     TableComponent,
@@ -35,6 +40,7 @@ import { SnackbarComponent } from './snackbar/snackbar.component';
     FlashyAccordionComponent,
     CardsComponent,
     SnackbarComponent,
+    CarouselComponent,
   ],
   imports: [
     MaterialModule,
@@ -42,6 +48,9 @@ import { SnackbarComponent } from './snackbar/snackbar.component';
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
+    CarouselModule,
+    ButtonModule,
+    ToastModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
